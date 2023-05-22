@@ -1,0 +1,47 @@
+disable_existing_loggers: false
+formatters:
+  simple:
+    datefmt: '%Y/%m/%d %H:%M:%S %z'
+    format: '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+handlers:
+  console:
+    class: logging.StreamHandler
+    formatter: simple
+    level: DEBUG
+    stream: ext://sys.stdout
+  error_file_handler:
+    backupCount: 1
+    class: logging.handlers.RotatingFileHandler
+    encoding: utf8
+    filename: /home/project/gmao/log_file/errors.log
+    formatter: simple
+    level: ERROR
+    maxBytes: 5242880
+  info_file_handler:
+    backupCount: 1
+    class: logging.handlers.RotatingFileHandler
+    encoding: utf8
+    filename: /home/project/gmao/log_file/debug.log
+    formatter: simple
+    level: INFO
+    maxBytes: 5242880
+loggers:
+  my_module1:
+    handlers:
+    - console
+    - info_file_handler
+    level: INFO
+    propagate: false
+  my_module2:
+    handlers:
+    - console
+    - info_file_handler
+    level: INFO
+    propagate: false
+root:
+  handlers:
+  - console
+  - info_file_handler
+  - error_file_handler
+  level: INFO
+version: 1

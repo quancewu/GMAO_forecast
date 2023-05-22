@@ -1,0 +1,72 @@
+{
+    "Source":{
+        "Total AOD": ["TOTEXTTAU"],
+        "Smoke": ["OCEXTTAU", "BCEXTTAU"],
+        "Dust": ["DUEXTTAU"],
+        "Sulfate": ["SUEXTTAU"],
+        "Sea salt": ["SSEXTTAU"]
+    },
+    "information": {
+        "NCU":{
+            "lat": 24.968,
+            "lon": 121.188,
+            "timezone": 8
+        },
+        "Mt.Lulin": {
+            "lat": 23.469,
+            "lon": 120.874,
+            "timezone": 8
+        },
+        "Dongsha": {
+            "lat": 20.699,
+            "lon": 116.729,
+            "timezone": 8
+        },
+        "Tai Ping": {
+            "lat": 10.376,
+            "lon": 114.362,
+            "timezone": 8
+        },
+        "Son La": {
+            "lat": 21.332,
+            "lon": 103.905,
+            "timezone": 7
+        },
+        "Doi Ang Khang": {
+            "lat": 19.932,
+            "lon": 99.045,
+            "timezone": 7
+        },
+        "Chiang Mai": {
+            "lat": 18.813,
+            "lon": 98.987,
+            "timezone": 7
+        },
+        "Bangkok": {
+            "lat": 13.749,
+            "lon": 100.518,
+            "timezone": 7
+        },
+        "Bangi": {
+            "lat": 2.927,
+            "lon": 101.774,
+            "timezone": 8
+        },
+        "Kuala Lumpur": {
+            "lat": 3.168,
+            "lon": 101.702,
+            "timezone": 8
+        },
+        "Kota Kinabalu": {
+            "lat": 5.980,
+            "lon": 116.074,
+            "timezone": 8
+        },
+        "Kuching": {
+            "lat": 1.554,
+            "lon": 110.359,
+            "timezone": 8
+        }
+    }
+
+}

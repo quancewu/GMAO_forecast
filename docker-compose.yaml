@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  python:
+    container_name: GMAO_plot_SV
+    restart: always
+    build: 
+      context: ./GMAO_plot_docker
+      args:
+        ROOT_PATH: ${ROOT_PATH}
+    user: "1000:1000"
+    volumes:
+      # Set SQL data mapping on drive.
+      - "${IMG_DIR}/forecast_img/geos5:/nas"
+      - "${DATA_DIR}/GMAO/geos-fp/data:/downloads"
+      - "${DATA_DIR}/GMAO/geos-fp/output_forecast:/output_forecast"
+      - "${WORK_DIR}/GMAO_opendap/GMAO_plot_docker:/home/project/gmao"
+    
+

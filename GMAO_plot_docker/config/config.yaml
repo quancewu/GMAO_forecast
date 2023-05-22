@@ -1,0 +1,4 @@
+data_path: "/downloads"
+request_url: "https://portal.nccs.nasa.gov/cgi-lats4d/webform.cgi"
+nas_path: "/nas"
+output_path: "/output_forecast"

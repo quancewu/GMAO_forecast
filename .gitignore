@@ -1,0 +1,15 @@
+# env
+.env
+
+# git
+.git
+
+# data
+data
+
+# python cache
+__pycache__
+
+# patch
+*.diff
+service.sh
