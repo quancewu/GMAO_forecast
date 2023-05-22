@@ -161,3 +161,4 @@ cython_debug/
 
 log_file/
 portal.nccs.nasa.gov/
+service.sh

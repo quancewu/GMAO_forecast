@@ -1,0 +1,18 @@
+# env
+.env
+
+# git
+.git
+
+# data
+data
+data_file
+
+# python cache
+__pycache__
+.local
+log_file
+fig
+
+# patch
+*.diff

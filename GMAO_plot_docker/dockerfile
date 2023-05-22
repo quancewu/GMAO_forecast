@@ -1,0 +1,19 @@
+FROM python:3.9
+
+RUN mkdir -p /home/project/gmao
+
+WORKDIR /home/project/gmao
+
+RUN apt-get update && apt-get install -y libgeos-dev libproj-dev liblapack-dev libblas-dev gfortran
+RUN apt-get install -y libgeos++-dev
+COPY ./requirements.txt /home/project/gmao
+# COPY ./script/daemon.py /home/project/gmao
+# RUN pip install --upgrade pip --no-cache-dir -r requirements.txt 
+RUN pip install -r requirements.txt 
+RUN pip install --no-binary :all: shapely
+RUN pip install cartopy scipy
+
+COPY . /home/project/gmao
+
+# CMD ["python", "./script/daemon.py"]
+CMD ["python", "-u", "Run_server.py"]
