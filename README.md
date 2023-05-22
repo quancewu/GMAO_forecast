@@ -1,2 +1,2 @@
 # GMAO_forecast
-python3.8 
+This is GMAO forcast ploting script
